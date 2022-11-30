@@ -1,0 +1,205 @@
+body {
+    width: 100%;
+    /* задает минимальную ширину страницы */
+    min-width:960px;
+}
+
+section{
+    padding-top: 230px;
+    /* padding-bottom: 10px; */
+}
+
+h5{
+    color: #28bf74;
+}
+
+button.btn_callback {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(128, 240, 193);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    border-radius: 100px;
+    scale: 0.9;
+} 
+
+button.btn_callback:hover { background: rgb(53, 167, 110); }
+button.btn_callback:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/sales/arrow-right-square.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/sales/arrow-left-square.svg);
+}
+
+/* Для сдвига стрелок в строны */
+/* .carousel-control-prev {    
+    left: -70px;
+}
+
+.carousel-control-next {
+    right: -70px;
+}  */
+
+#advantages_yellow {
+    padding-top: 50px;
+    background-color: rgb(128, 240, 193);
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 15px; /* Уголки */
+    text-align: center;
+    /* margin-top: 300px; */
+}
+
+#topper {
+    font-size: 115%;
+    position:fixed;
+    top: 15px; 
+    width: 100%; /* Full width */
+    padding: 10px; /* Поля вокруг текста */
+    z-index: 10000;
+}
+
+#topper_lower {
+    font-size: 100%;
+    position:fixed;
+    top: 90px; 
+    width: 100%; /* Full width */
+    padding: 10px; /* Поля вокруг текста */
+
+    text-align: center;
+    /* z-index нужен чтобы navbar находился на переднем плане, число такое задано, чтобы его не перебивали другие элементы */
+    z-index: 10000;
+    margin-top: 50px;
+}
+
+.card-header {
+    text-align: right;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* :root {
+    background-color: rgb(128, 240, 193);
+} */
+
+.footer {
+    background-color: rgb(219, 233, 228);
+}
+
+#number_buyers img{
+    border: 3px solid rgb(128, 240, 193);
+    text-align: center;
+    border-radius: 5px; 
+    margin-top:40px;
+}
+
+#rating img{
+    border: 3px solid #eeea0a;  /* Цветная рамка вокруг изображения */
+    text-align: center;
+    border-radius: 5px; /* Уголки */
+    margin-top:40px;  /* опустить изображение вниз на 40px */
+}
+
+#social_webs{
+    cursor: pointer;
+}
+
+#links_info_footer{
+    margin-top:40px;  /* опустить изображение вниз на 40px */
+    color: #1cdda3;
+    cursor: pointer;
+}
+
+#for_buyers {
+    cursor: pointer;
+}
+
+#about_us {
+    cursor: pointer;
+}
+
+#lower_footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(128, 240, 193);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* .carousel-item {
+    height: 489px;
+    min-width: 300px;
+    max-height: 489px;
+    min-height: 489px;
+    height: fixed;
+} */
+
+@media(min-width: 1090px){
+    /* #carusel_goods .col{
+        height: 489px;
+        min-width: 300px;
+        max-height: 489px;
+        min-height: 489px;
+        height: fixed;
+    } */
+    /* .card-title{
+        font-size: 110%;
+    } */
+
+    .text-success{
+        height: 316px;
+        min-height: 316px;
+        max-height: 316px;
+    }
+
+}
+
+@media(max-width: 1090px){
+    .card-title{
+        font-size: 95%;
+    }
+}
+
+@media(max-width: 1005px){
+    .card-title{
+        font-size: 90%;
+    }
+}
+
+@media(max-width: 1005px){
+    .container-fluid{
+        min-width: 500px;
+    }
+}
+
+#right_topper_icons {
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-sizing: border-box;
+
+}
+
+.orders, .favorites, .login, .basket {
+    padding-right: 10px;
+    padding-left: 5px;
+}
